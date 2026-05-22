@@ -1,12 +1,15 @@
 package ootd;
 
-public class Acc extends Clothes {
-    public Acc(String name) {
-        super("액세서리", name);
+public enum Acc {
+    Cap("모자"),
+    Glasses("안경");
+
+    private final String name;
+    private Acc(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public void wear() {
-        System.out.println(name + "(을)를 씁니다.");
-    }
 }

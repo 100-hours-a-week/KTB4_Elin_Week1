@@ -179,10 +179,12 @@ public interface Car {
 ```java
 package ootd;
 
+import ootd.acc.Acc;
+
 public class Cap extends Acc {
-    public Cap() {
+  public Cap() {
         **super("모자");**
-    }
+  }
 }
 ```
 
