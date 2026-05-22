@@ -1,8 +1,11 @@
 package ootd;
 
-public class Top extends Clothes {
+public enum Top {
+    Blouse("블라우스"),
+    Tshirt("티셔츠"),
+    Knit("니트");
 
-    public Top(String name) {
-        super("상의", name); // 부모 생성자 호출
-    }
+    private final String name;
+    private Top(String name) { this.name = name;}
+    public String getName() { return name;}
 }
